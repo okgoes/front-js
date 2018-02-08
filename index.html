@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div class="test">23424324</div>
+    <div class="test">2342dg4324</div>
+    <div class="test">234gg24fd324</div>
+    <div class="test">23424dgfd324</div>
+    <div id="bb">iddddddd</div>
+    <script type="text/javascript">
+    console.log(zyw('.test'));
+    (function() {
+        function A() {
+            return new B();
+        }
+
+        function B() {
+            this.age = 123;
+        }
+//        Object.prototype.name = 'zyw123';
+
+        function C() {}
+        B.prototype = new C();
+        B.prototype.name = '11111111111';
+        var a = new A();
+        var b = new B();
+        console.log(b instanceof C);
+        console.log(b.name);
+        console.log(a.name);
+    })('2', '2', '3');
+    </script>
+</body>
+</html>
